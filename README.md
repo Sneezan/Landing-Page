@@ -1,5 +1,10 @@
-# Landing-Page
+# Landing-Page (not finished)
 A simple, yet classic and stylish landing page created with HTML, CSS and JavaScript 
 
 # The Build
-This landing page is built with HTML and is CSS heavy, with some additional JavaScript. 
+
+
+
+# View it live
+You can view it live here 
+https://interstellaracademy.netlify.app
