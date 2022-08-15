@@ -208,6 +208,13 @@ h1 {
 
  } 
 
+ .astronaut {
+    display: flex; 
+    background-color:rgba(42, 37, 54, 0.75); 
+    height: auto;
+    width: 100%;
+ }
+
 .FAQ {
     background-color: rgb(112, 150, 112);
     padding: 100px;
