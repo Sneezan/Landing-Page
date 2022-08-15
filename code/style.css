@@ -198,7 +198,7 @@ h1 {
 }
 
 .Join-Us {
-    background-color: green;
+    background-color: #4D3B39;
     padding: 100px;
 }
 
@@ -219,7 +219,7 @@ h1 {
 
   /* --- RESPONSIVE TABLET ---- */
 
-  @media screen and (min-width: 790px) and (max-width: 1400px) {
+  @media screen and (min-width: 830px) and (max-width: 1280px) {
   
     h1 {
         font-size: 100px; 
@@ -231,20 +231,117 @@ h1 {
     }
     
     .Join-Us {
-        background-color: rgb(112, 150, 112);
-        padding: 100px;
+        display: flex;
+        row-gap: 0;
+        background-color:#4D3B39;
+        padding: 200px;
     }
-    
-    .responsive-image{
+
+     .astronaut {
+        display: flexbox; 
+        row-gap: 0;
+        background-color:rgba(42, 37, 54, 0.75); 
+        height: 100%;
         width: 100%;
+
+     }
+
+     .responsive-image{
+        width: 50%;
         height: auto;
+
     
      } 
-    
+
     .FAQ {
         background-color:  rgb(112, 150, 112);
         padding: 100px;
         
     }
 }
+
+
+
+  /* --- RESPONSIVE I PAD PRO ---- */
+
+  @media screen and (min-width: 1300px) and (max-width: 1366px) {
+  
+    h1 {
+        font-size: 100px;
+        font-family: 'Silkscreen';
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 400px;
+        padding-bottom: 400px;
+    }
     
+    .Join-Us {
+        display: flex;
+        background-color:#4D3B39;
+        padding: 200px;
+    }
+
+     .astronaut {
+        display: flex; 
+        background-color:rgba(42, 37, 54, 0.75); 
+        height: auto;
+        width: 100%;
+
+     }
+
+     .responsive-image{
+        width: 40%;
+        height: auto;
+
+    
+     } 
+
+    .FAQ {
+        background-color:  rgb(112, 150, 112);
+        padding: 200px;
+        
+    }
+}
+    
+
+
+  /* --- RESPONSIVE DESKTOP ---- */
+
+  @media screen and (min-width: 1500px) and (max-width: 2880px) {
+  
+    h1 {
+        font-size: 200px;
+        font-family: 'Silkscreen';
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-top: 400px;
+        padding-bottom: 400px;
+    }
+    
+    .Join-Us {
+        display: flex;
+        background-color:#4D3B39;
+        padding: 400px;
+    }
+
+     .astronaut {
+        display: flex; 
+        background-color:rgba(42, 37, 54, 0.75); 
+        height: auto;
+        width: 100%;
+
+     }
+
+     .responsive-image{
+        width: 40%;
+        height: auto;
+
+    
+     } 
+
+    .FAQ {
+        background-color:  rgb(112, 150, 112);
+        padding: 200px;
+        
+    }
+}
