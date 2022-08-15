@@ -5,20 +5,22 @@
     --overlay-color: rgba(42, 37, 54, 0.75);
     --accent-color:  rgb(112, 150, 112); 
     --menu-speed: 0.75s;
+  }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   body, html {
     height: 100%;
     margin: 0;
-    
-  }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
   }
   
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+  }
 
   /* MENU STYLES */
   .menu-wrap {
@@ -186,8 +188,8 @@ h1 {
     font-family: 'Silkscreen';
     color: rgb(255, 255, 255);
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin: 0;
 }
 
@@ -195,17 +197,16 @@ h1 {
     color:  rgb(112, 150, 112);
 }
 
-
-
-
 /*  JOIN US! */
 .Join-Us {
     background-color: #4D3B39;
-    padding: 100px }
+    padding: 100px;
+}
 
 .responsive-image{
     width: 100%;
-    height: auto;} 
+    height: auto;
+ } 
 
  .astronaut {
     display: flex; 
@@ -214,87 +215,92 @@ h1 {
     width: 100%;
  }
 
+ /*FAQ SECTION*/
+ body {
+     color: #333;
+     background:  rgb(112, 150, 112);
+     font-family: 'Raleway', sans-serif;
+     overflow-x: hidden;
+     padding-bottom: 80px;
 
- /*  FAQ SECTION  */
+   }
 
-  
-  .faq-header{
-    font-size: 42px;
-    justify-content: center;
-    padding: 24px;
-    margin: 0 auto;
-    
-  }
-  
-  .faq-content {
-    margin: 0 auto;
-  }
-  
-  .faq-question {
-    padding: 20px 0;
-    border-bottom: 1px dotted rgb(123, 169, 123);
-  }
-  
-  .panel-title {
-    font-size: 24px;
-    width: 100%;
-    position: center;
-    margin: 0;
-    padding: 10px 10px 0 48px;
-    display: block;
-    cursor: pointer;
-  }
-  
-  .panel-content {
-    font-size: 20px;
-    padding: 0px 14px;
-    margin: 0 40px;
-    height: 0;
-    overflow: hidden;
-    z-index: -1;
-    position: relative;
-    opacity: 0;
-    -webkit-transition: .4s ease;
-    -moz-transition: .4s ease;
-    -o-transition: .4s ease;
-    transition: .4s ease;
-  }
-  
-  .panel:checked ~ .panel-content{
-    height: auto;
-    opacity: 1;
-    padding: 14px;
-  }
-  
-  .plus {
-    position: absolute;
-    margin-left: 20px;
-    margin-top: 4px;
-    z-index: 5;
-    font-size: 42px;
-    line-height: 100%;
-    -webkit-user-select: none;    
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
-  }
-  
-  .panel:checked ~ .plus {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
-  .panel {
-    display: none;
-  }
+   .faq-header{
+     font-size: 42px;
+     justify-content: center;
+     padding: 24px;
+     margin: 0 auto;
 
+   }
+
+   .faq-content {
+     margin: 0 auto;
+   }
+
+   .faq-question {
+     padding: 20px 0;
+     border-bottom: 1px dotted rgb(123, 169, 123);
+   }
+
+   .panel-title {
+     font-size: 24px;
+     width: 100%;
+     position: center;
+     margin: 0;
+     padding: 10px 10px 0 48px;
+     display: block;
+     cursor: pointer;
+   }
+
+   .panel-content {
+     font-size: 20px;
+     padding: 0px 14px;
+     margin: 0 40px;
+     height: 0;
+     overflow: hidden;
+     z-index: -1;
+     position: relative;
+     opacity: 0;
+     -webkit-transition: .4s ease;
+     -moz-transition: .4s ease;
+     -o-transition: .4s ease;
+     transition: .4s ease;
+   }
+
+   .panel:checked ~ .panel-content{
+     height: auto;
+     opacity: 1;
+     padding: 14px;
+   }
+
+   .plus {
+     position: absolute;
+     margin-left: 20px;
+     margin-top: 4px;
+     z-index: 5;
+     font-size: 42px;
+     line-height: 100%;
+     -webkit-user-select: none;    
+     -moz-user-select: none;
+     -ms-user-select: none;
+     -o-user-select: none;
+     user-select: none;
+     -webkit-transition: .2s ease;
+     -moz-transition: .2s ease;
+     -o-transition: .2s ease;
+     transition: .2s ease;
+   }
+
+   .panel:checked ~ .plus {
+     -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -o-transform: rotate(45deg);
+     transform: rotate(45deg);
+   }
+
+   .panel {
+     display: none;
+   }
 
 /*  -- FOOTER---*/
 .footer {
@@ -576,8 +582,8 @@ h1 {
       
       .faq-content {
         margin: 0 auto;
-        padding-right: 500px;
-        padding-left: 500px;
+        padding-right: 700px;
+        padding-left: 700px;
       }
       
       .faq-question {
