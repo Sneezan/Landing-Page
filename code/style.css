@@ -11,6 +11,7 @@
     box-sizing: border-box;
   }
 
+
   body, html {
     height: 100%;
     margin: 0;
@@ -174,47 +175,6 @@
     transition: color 0.4s ease;
   }
 
-  
-
-  .responsive-image{
-    width: 100%;
-    height: auto;
- } 
-
-
-
-h1 {
-    font-size: 72px; 
-    font-family: 'Silkscreen';
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin: 0;
-}
-
-.h1-style :hover{
-    color:  rgb(112, 150, 112);
-}
-
-/*  JOIN US! */
-.Join-Us {
-    background-color: #4D3B39;
-    padding: 100px;
-}
-
-.responsive-image{
-    width: 100%;
-    height: auto;
- } 
-
- .astronaut {
-    display: flex; 
-    background-color:rgba(42, 37, 54, 0.75); 
-    height: auto;
-    width: 100%;
- }
-
  /*FAQ SECTION*/
  body {
      color: #333;
@@ -227,7 +187,7 @@ h1 {
 
    .faq-header{
      font-size: 42px;
-     justify-content: center;
+     text-align: center;
      padding: 24px;
      margin: 0 auto;
 
@@ -239,7 +199,6 @@ h1 {
 
    .faq-question {
      padding: 20px 0;
-     border-bottom: 1px dotted rgb(123, 169, 123);
    }
 
    .panel-title {
@@ -302,17 +261,81 @@ h1 {
      display: none;
    }
 
+/*-------CONTENT----------*/
+
+h1 {
+    font-size: 72px; 
+    font-family: 'Silkscreen';
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0;
+}
+
+.h1-style :hover{
+    color:  rgb(112, 150, 112);
+}
+
+/* ----------- JOIN US! ------------*/
+.join-us-wrapper {
+    background-color: #4D3B39;
+    padding: 100px;
+}
+
+
+
+/*------ BREAKER --------*/
+
+.breaker-wrapper{
+  background-color: rgb(105, 84, 84); 
+  display: grid;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  align-items: center;
+}
+
+ .astronaut {
+    display: grid; 
+    height: auto;
+    width: 100%;
+ }
+
+ .responsive-image{
+  width: 100%;
+  height: auto;
+} 
+
+.review-box{
+  background-color: #fff;
+}
+
+.reviews{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+}
+
+h2{
+  color:#4D3B39;
+}
+
+
+
+
 /*  -- FOOTER---*/
 .footer {
-    background-color:rgb(112, 150, 112);
+    background-color:rgb(87, 94, 87);
     padding: 80px;
+    text-align: center;
 }
 
 
 
   /* --- RESPONSIVE TABLET ---- */
 
-  @media screen and (min-width: 830px) and (max-width: 1270px) {
+  @media screen and (min-width: 830px) {
   
     h1 {
         font-size: 100px; 
@@ -330,74 +353,56 @@ h1 {
         padding: 200px;
     }
 
-     .astronaut {
-        display: flexbox; 
-        row-gap: 0;
-        background-color:rgba(42, 37, 54, 0.75); 
-        height: 100%;
-        width: 100%;
-
-     }
 
      .responsive-image{
         width: 50%;
         height: auto;
-
-    
      } 
 
-     body {
-        color: #333;
-        background:  rgb(112, 150, 112);
-        font-family: 'Raleway', sans-serif;
 
-      }
-      
+    .breaker-wrapper{
+      background-color: rgb(105, 84, 84); 
+      display: flex;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      align-items: center;
+    }
+
+        .astronaut{
+      margin-right: -50%;
+    }
+    
+    
+     .reviews{
+      background-color: #4D3B39;
+      color: white;
+      margin: 0 auto;
+      display: flex;
+      grid-template-columns: 1fr 1fr;
+
+    }
+  
+
       .faq-header{
         font-size: 42px;
         text-align: center;
-        padding: 24px;
-        margin: 0 auto;
-        
+        padding: 28px;
       }
       
       .faq-content {
-        margin: 0 auto;
-        padding-right: 70px;
-        padding-left: 70px;
+        padding-right: 100px;
+        padding-left: 100px;
       }
       
       .faq-question {
         padding: 20px 0;
-        border-bottom: 1px dotted rgb(123, 169, 123);
       }
       
       .panel-title {
-        font-size: 24px;
-        width: 100%;
-        position: center;
-        margin: 0;
-        padding: 10px 10px 0 48px;
-        display: block;
-        cursor: pointer;
-      }
-      
-      .panel-content {
-        font-size: 20px;
-        padding: 0px 14px;
-        margin: 0 40px;
-        height: 0;
-        overflow: hidden;
-        z-index: -1;
-        position: relative;
-        opacity: 0;
-        -webkit-transition: .4s ease;
-        -moz-transition: .4s ease;
-        -o-transition: .4s ease;
-        transition: .4s ease;
-      }
-      
-}
+        font-size: 28px;
+      }  
+    }
 
 
 
@@ -405,86 +410,7 @@ h1 {
 
   @media screen and (min-width: 1290px) and (max-width: 1440px) {
   
-    h1 {
-        font-size: 100px;
-        font-family: 'Silkscreen';
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding-top: 300px;
-        padding-bottom: 300px;
-    }
-    
-    .Join-Us {
-        display: flex;
-        background-color:#4D3B39;
-        padding: 200px;
-    }
 
-     .astronaut {
-        display: flex; 
-        background-color:rgba(42, 37, 54, 0.75); 
-        height: auto;
-        width: 100%;
-
-     }
-
-     .responsive-image{
-        width: 40%;
-        height: auto;
-
-    
-     } 
-
-     body {
-        color: #333;
-        background:  rgb(112, 150, 112);
-        font-family: 'Raleway', sans-serif;
-
-      }
-      
-      .faq-header{
-        font-size: 42px;
-        text-align: center;
-        padding: 24px;
-        margin: 0 auto;
-        
-      }
-      
-      .faq-content {
-        margin: 0 auto;
-        padding-right: 70px;
-        padding-left: 70px;
-      }
-      
-      .faq-question {
-        padding: 20px 0;
-        border-bottom: 1px dotted rgb(123, 169, 123);
-      }
-      
-      .panel-title {
-        font-size: 24px;
-        width: 100%;
-        position: center;
-        margin: 0;
-        padding: 10px 10px 0 48px;
-        display: block;
-        cursor: pointer;
-      }
-      
-      .panel-content {
-        font-size: 20px;
-        padding: 0px 14px;
-        margin: 0 40px;
-        height: 0;
-        overflow: hidden;
-        z-index: -1;
-        position: relative;
-        opacity: 0;
-        -webkit-transition: .4s ease;
-        -moz-transition: .4s ease;
-        -o-transition: .4s ease;
-        transition: .4s ease;
-      }
       
 }
     
@@ -494,126 +420,5 @@ h1 {
 
   @media screen and (min-width: 1450px) and (max-width: 2880px) {
    
-    .menu-wrap .toggler {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        cursor: pointer;
-        width: 70px;
-        height: 70px;
-        opacity: 0;
-      }
-
-    .menu-wrap .hamburger {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 90px;
-        height: 90px;
-        padding: 1rem;
-        background: var(--primary-color);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-  /* menu items style*/
-  .menu-wrap .menu > div > div > ul > li {
-    list-style: none;
-    color: #fff;
-    font-size: 40px;
-    padding: 1rem;
-  }
-
-  /* menu items when hovered*/
-  .menu-wrap .menu > div > div > ul > li :hover{
-    list-style: none;
-    color:  rgb(112, 150, 112);
-    font-size: 40px;
-    padding: 1rem;
-  }
-
-    h1 {
-        font-size: 200px;
-        font-family: 'Silkscreen';
-        color: rgb(255, 255, 255);
-        text-align: center;
-        padding-top: 400px;
-        padding-bottom: 400px;
-    }
-    
-    .Join-Us {
-        display: flex;
-        background-color:#4D3B39;
-        padding: 400px;
-    }
-
-     .astronaut {
-        display: flex; 
-        background-color:rgba(42, 37, 54, 0.75); 
-        height: auto;
-        width: 100%;
-
-     }
-
-     .responsive-image{
-        width: 40%;
-        height: auto;
-
-    
-     } 
-
-     body {
-        color: #333;
-        background:  rgb(112, 150, 112);
-        font-family: 'Raleway', sans-serif;
-
-      }
-      
-      .faq-header{
-        font-size: 70px;
-        text-align: center;
-        padding: 48px;
-        margin: 0 auto;
-        
-      }
-      
-      .faq-content {
-        margin: 0 auto;
-        padding-right: 700px;
-        padding-left: 700px;
-      }
-      
-      .faq-question {
-        padding: 20px 0;
-        border-bottom: 1px dotted rgb(123, 169, 123);
-      }
-      
-      .panel-title {
-        font-size: 40px;
-        width: 100%;
-        position: center;
-        margin: 0;
-        padding: 10px 10px 0 48px;
-        display: block;
-        cursor: pointer;
-      }
-      
-      .panel-content {
-        font-size: 30px;
-        padding: 0px 14px;
-        margin: 0 40px;
-        height: 0;
-        overflow: hidden;
-        z-index: -1;
-        position: relative;
-        opacity: 0;
-        -webkit-transition: .4s ease;
-        -moz-transition: .4s ease;
-        -o-transition: .4s ease;
-        transition: .4s ease;
-      }
-      
+   
 }
