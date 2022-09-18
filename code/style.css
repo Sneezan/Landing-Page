@@ -1,11 +1,13 @@
 
 /* CORE STYLES */
 :root {
-    --primary-color: rgba(42, 37, 54, 0.75);
-    --overlay-color: rgba(42, 37, 54, 0.75);
-    --accent-color:  rgb(112, 150, 112); 
+    --primary-color: #403b37 ;
+    --overlay-color: #4c4c4c99;
+    --accent-color:  #a4da47; 
     --menu-speed: 0.75s;
-  }* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -274,14 +276,122 @@ h1 {
 }
 
 .h1-style :hover{
-    color:  rgb(112, 150, 112);
+    color: #a4da47;
 }
 
 /* ----------- JOIN US! ------------*/
 .join-us-wrapper {
     background-color: #4D3B39;
-    padding: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;;
 }
+
+.join-us{
+  margin: 0 auto;
+}
+.more{
+  color: #a4da47;
+}
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: #a4da47;
+      font-size: 18px;
+    }
+    
+    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+      color: #bbb5af;
+    }
+    
+    input::-ms-placeholder, textarea::-ms-placeholder {
+      color: #aca49c;
+      font-size: 0.875em;
+    }
+    
+    header {
+      position: relative;
+      margin: 10px auto;
+      font-size: 32px;
+      text-align: center;
+      letter-spacing: 7px;
+      color: #b3aca7;
+    }
+    
+    #form {
+      margin: 0 auto;
+      width: 400px;
+    }
+    
+    input {
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      width: 99%;
+      height: 50px;
+      padding: 0px 15px 0px 15px;
+      
+      background: transparent;
+      outline: none;
+      color: #726659;
+      
+      border: solid 1px #b3aca7;
+      border-bottom: none;
+      
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+    }
+    
+    input:hover {
+      background: #b3aca7;
+      color: #e2dedb;
+    }
+    
+    textarea {
+      width: 99%;
+      max-width: 100%;
+      height: 110px;
+      max-height: 110px;
+      padding: 15px;
+      
+      background: transparent;
+      outline: none;
+      
+      color: #726659;
+      font-family: 'Lato', sans-serif;
+      font-size: 18px;
+      
+      border: solid 1px #b3aca7;
+    
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+    }
+    
+    textarea:hover {
+      background: #b3aca7;
+      color: #e2dedb;
+    }
+    
+    #submit {
+      width: 99%;
+      padding: 0;
+      margin: -5px 0px 0px 0px;
+      font-size: 18px;
+      color: #a4da47;
+      
+      outline:none;
+      cursor: pointer;
+      
+      border: solid 1px #b3aca7;
+      border-top: none;
+    }
+    
+    #submit:hover {
+      color: #e2dedb;
+    }
+
+
+
 
 
 
@@ -307,9 +417,6 @@ h1 {
   height: auto;
 } 
 
-.review-box{
-  background-color: #fff;
-}
 
 .reviews{
   padding-top: 80px;
@@ -318,7 +425,22 @@ h1 {
 }
 
 h2{
-  color:#4D3B39;
+  color:#f7f4f1;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 30px;
+}
+
+h4{
+  position: relative;
+  padding: 10px;
+  left: 40%;
+  max-width: 200px;
+  font-weight: 300;
+  color: #a4da47;
 }
 
 
@@ -329,16 +451,31 @@ h2{
     background-color:rgb(87, 94, 87);
     padding: 80px;
     text-align: center;
+    color: #e2dedb;
+    line-height: 30px;
+    
 }
 
+.footer-text{
+  font-size: 22px;
+  color: #a4da47;
+  font-family: 'PT Serif', serif;
+  line-height: 30px;
+}
 
+.disclaimer {
+  font-size: 10px;
+  padding-top: 10px;
+  color: #7c8666;
+  line-height: 10px;;
+}
 
   /* --- RESPONSIVE TABLET ---- */
 
   @media screen and (min-width: 830px) {
   
     h1 {
-        font-size: 100px; 
+        font-size: 120px; 
         font-family: 'Silkscreen';
         color: rgb(255, 255, 255);
         text-align: center;
@@ -350,9 +487,41 @@ h2{
         display: flex;
         row-gap: 0;
         background-color:#4D3B39;
-        padding: 200px;
     }
 
+
+    header {
+      position: relative;
+      margin: 100px 0 25px 0;
+      font-size: 32px;
+      text-align: center;
+      letter-spacing: 7px;
+      color: #b3aca7;
+      padding-bottom: 30px;
+    }
+    
+    #form {
+      position: relative;
+      width: 500px;
+    }
+    
+    input {
+      font-size: 18px;
+      width: 470px;
+    }
+    
+    .join-us-wrapper{
+      padding-bottom: 100px;
+    }
+    textarea {
+      width: 470px;
+      max-width: 470px;
+      height: 110px;
+    }
+    
+    #submit {
+      width: 94%;
+    }
 
      .responsive-image{
         width: 50%;
@@ -375,35 +544,53 @@ h2{
     
     
      .reviews{
-      background-color: #4D3B39;
       color: white;
       margin: 0 auto;
       display: flex;
       grid-template-columns: 1fr 1fr;
+      width: 50%;
+    }
 
+    h2{
+      font-size: 40px;
     }
   
 
+    h4{
+      position: relative;
+      padding: 10px;
+      left: 60%;
+      max-width: 300px;
+      font-weight: 300;
+      color: #a4da47;
+    }
+    
+    
+
       .faq-header{
-        font-size: 42px;
+        font-size: 46px;
         text-align: center;
-        padding: 28px;
+        padding: 38px;
       }
       
       .faq-content {
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 200px;
+        padding-left: 200px;
+        padding-bottom: 100px;
       }
       
       .faq-question {
-        padding: 20px 0;
+        padding: 30px 0;
       }
       
       .panel-title {
-        font-size: 28px;
+        font-size: 30px;
       }  
-    }
 
+    .footer >p{
+      font-size: 20px;;
+    }
+  }
 
 
   /* --- RESPONSIVE I PAD PRO ---- */

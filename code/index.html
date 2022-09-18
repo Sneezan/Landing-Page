@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-      </style>
+      @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&family=Roboto:wght@300;400;500&display=swap');
+    </style>
 <div class="menu-wrap">
     <input type="checkbox" class="toggler">
     <div class="hamburger"><div></div></div>
@@ -50,7 +51,13 @@ body {
 <section> 
     <div class="join-us-wrapper">
       <div class="join-us"> 
-        <p>JOIN NOW </p>
+        <header>REQUEST <span class="more">MORE</span> INFORMATION</header>
+        <form id="form" class="topBefore">
+              <input id="name" type="text" placeholder="NAME">
+              <input id="email" type="text" placeholder="E-MAIL">
+              <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+          <input id="submit" type="submit" value="GO!"> 
+        </form>
       </div>
     </div>
 </section>
@@ -64,7 +71,8 @@ body {
     </div>  
     <div class="reviews">
       <div class="review-box">
-        <h2>review</h2>
+        <h2>"I have never experienced eduaction like this, the way you're given full autonomy from the start"</h2>
+        <h4>- Eliza R, class of 2021</h4>
       </div>
     </div>
   </div>
@@ -108,7 +116,13 @@ body {
 </body>
 <footer>
   <div class="footer">
-    <p>FOOTER</p>
+    <p class="footer-text">Interstellar Academy</p>
+    <p>164 N. Philmont Ave.</p>
+    <p>East Elmhurst, NY 11370</p>
+
+    <p class="disclaimer">Interstellar Academy is a fictional 
+    company and project made by Cecilia Frånlund, frontend developer
+    https://ceciliafranlund.netlify.app</p>
   </div>
 </footer>
 </html>
